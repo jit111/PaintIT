@@ -7,5 +7,6 @@ public class MainClass {
         int y = x+10;
         int z = 3+10;
         int i = 0;
+        int t = 10;
     }
 }
