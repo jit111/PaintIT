@@ -5,5 +5,6 @@ public class MainClass {
         System.out.println("Simple");
         int x =10;
         int y = x+10;
+        int z = 3+10;
     }
 }
