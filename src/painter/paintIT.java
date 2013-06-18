@@ -4,7 +4,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class paintModified
+public class paintIT
 {
     public static void main(String[] args)
     {
