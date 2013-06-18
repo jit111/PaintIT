@@ -6,6 +6,5 @@ public class MainClass {
         int x =10;
         int y = x+10;
         int z = 3+10;
-        int a = x+y+z;
     }
 }
