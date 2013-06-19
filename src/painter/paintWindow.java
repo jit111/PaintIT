@@ -4,24 +4,15 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class paintIT
-{
-    public static void main(String[] args)
-    {
-        PaintWindow frame = new PaintWindow();
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setResizable(false);
-        frame.setVisible(true);
-    }
 
-}
-
-class PaintWindow extends JFrame
+public class PaintWindow extends JFrame
 {
     public PaintWindow()
     {
         setTitle("PaintIt");
         setSize(450, 450);
+        setResizable(false);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         panel = new JPanel();
         drawPad = new PadDraw();
@@ -32,11 +23,11 @@ class PaintWindow extends JFrame
         Container content = this.getContentPane();
         content.setLayout(new BorderLayout());
 
-        //установить панель слева, а место для рисования по центру
-        content.add(panel, BorderLayout.WEST);
+        //установить панель сверху, а место для рисования по центру
+        content.add(panel, BorderLayout.NORTH);
         content.add(drawPad, BorderLayout.CENTER);
 
-//add the color buttons:
+        //добавить кнопки с цветами
         makeColorButton(Color.BLUE);
         makeColorButton(Color.MAGENTA);
         makeColorButton(Color.RED);
